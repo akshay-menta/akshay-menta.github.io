@@ -7,7 +7,7 @@ let e_is_shown = false;
 
 document.getElementById('iemail').addEventListener("click", function(){
     let demail = document.getElementById('demail');
-    let msg = "avxuvynpp16" + "@" + "tznvy.pbz<oe>" + "acnyrgv@hpfq.rqh";
+    let msg = "nxfunlzragn24" + "@" + "tznvy.pbz<oe>" + "zragn.fn@abegurnfgrea.rqh";
     demail.innerHTML = rot13(msg);
     demail.style.opacity = e_is_shown ? 0 : 1;
     e_is_shown = !e_is_shown;
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const dhead = document.getElementById('dhead');
 const img = document.querySelector('#dpic img');
-const images = ['assets/me.jpg', 'assets/me2.png'];
+const images = ['assets/me.jpg', 'assets/me.jpg'];
 let currentIndex = 0;
 
 function switchImage() {
