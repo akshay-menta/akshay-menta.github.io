@@ -158,3 +158,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Certificate image modal functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('certificate-modal');
+    const modalImg = document.getElementById('certificate-image');
+    const closeBtn = document.querySelector('#certificate-modal .close');
+    
+    // Get all image certificate links
+    const certLinks = document.querySelectorAll('.image-link');
+    
+    certLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const imgSrc = this.getAttribute('data-certificate');
+            modalImg.src = imgSrc;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+    
+    // Close modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable scrolling again
+    });
+    
+    // Close modal when clicking outside the image
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
