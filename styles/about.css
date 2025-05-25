@@ -1,5 +1,5 @@
 #about {
-    text-align: left;
+    text-align: center;
 }
 
 #about p {
@@ -7,6 +7,10 @@
     line-height: 1.8;
     margin-bottom: 30px;
     color: var(--text-primary);
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about strong {
@@ -83,7 +87,7 @@
 }
 
 .skills-section {
-    text-align: left;
+    text-align: center;
 }
 
 .skills {
@@ -102,6 +106,7 @@
     color: var(--text-primary);
     transition: all 0.3s ease;
     box-shadow: var(--shadow-sm);
+    text-align: left;
 }
 
 .skill-item:hover {
@@ -118,20 +123,53 @@
 }
 
 @media (max-width: 768px) {
+    #about {
+        text-align: center;
+    }
+    
+    #about p {
+        text-align: center;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+    
+    #about h2 {
+        text-align: center;
+    }
+    
     .tab-buttons {
         flex-direction: column;
     }
 
     .tab-button {
-        text-align: left;
+        text-align: center;
+        padding: 12px 15px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 14px;
     }
 
     .tab-button::after {
         bottom: -1px;
     }
+    
+    .tab-content {
+        padding: 20px 15px;
+    }
 
     .skills {
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .skill-item {
+        padding: 12px 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .skill-item span {
+        margin-bottom: 3px;
+        text-align: center;
     }
 }

@@ -94,18 +94,34 @@
 
 @media (max-width: 768px) {
     .pub {
-        padding: 15px;
+        padding: 15px 15px 15px 20px;
+        margin-bottom: 25px;
     }
 
     .pub-title {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .pub-venue {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .pub-authors {
+        font-size: 13px;
+        line-height: 1.5;
     }
 
     .google-scholar-section {
-        padding: 20px;
+        padding: 20px 15px;
+        margin-top: 30px;
     }
 
     .google-scholar-link {
-        padding: 10px 20px;
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
     }
 }

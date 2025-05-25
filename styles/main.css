@@ -41,7 +41,7 @@ main {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 body::-webkit-scrollbar {
@@ -64,8 +64,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .section {
     width: 100%;
-    padding: 60px 40px;
-    margin: 30px 0;
+    padding: 40px 20px;
+    margin: 20px 0;
     text-align: center;
     background-color: var(--background-card);
     box-sizing: border-box;
@@ -186,16 +186,35 @@ footer {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    
     h2 {
-        font-size: 28px;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
     }
     
     h3 {
-        font-size: 22px;
+        font-size: 1.3rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+        text-align: center;
     }
     
     h4 {
-        font-size: 18px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    p {
+        text-align: left;
+        font-size: 0.95rem;
+    }
+    
+    .section {
+        padding: 30px 15px;
     }
 }
 
@@ -415,5 +434,25 @@ footer {
 @media (max-width: 768px) {
     .certifications-container {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .certification-card {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .certification-content h3 {
+        font-size: 1.1rem;
+        text-align: left;
+        margin-top: 0;
+    }
+    
+    .certification-logo {
+        margin-bottom: 15px;
+    }
+    
+    .certification-logo img {
+        max-width: 80px;
     }
 }

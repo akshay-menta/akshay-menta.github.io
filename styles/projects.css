@@ -44,6 +44,7 @@
     margin: 16px 0 10px;
     line-height: 1.4;
     transition: color var(--transition-fast);
+    text-align: center;
 }
 
 .project-card:hover .project-preview h4 {
@@ -59,6 +60,7 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    text-align: left;
 }
 
 .project-tools {
@@ -68,6 +70,7 @@
     margin-top: auto;
     padding-top: 12px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 .view-details-btn {
@@ -229,15 +232,40 @@
 @media (max-width: 768px) {
     .project-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .modal-content {
-        width: 90%;
-        padding: 20px;
-        margin: 10% auto;
+        width: 95%;
+        padding: 20px 15px;
+        margin: 5% auto;
     }
     
     .project-info {
         grid-template-columns: 1fr;
+        padding: 12px;
+        text-align: center;
+    }
+    
+    .project-description {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    
+    .project-description ul {
+        padding-left: 15px;
+        text-align: left;
+    }
+    
+    .project-description li {
+        margin-bottom: 10px;
+    }
+    
+    .project-links {
+        justify-content: center;
+    }
+    
+    .project-preview {
+        padding: 15px;
     }
 }
