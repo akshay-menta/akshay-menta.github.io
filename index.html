@@ -257,21 +257,15 @@
                             <p class="project-description">
                                 InfoMeme is an innovative AI-powered system that converts real-time news into digestible and shareable memes, making information consumption both entertaining and accessible. Key components:
                                 <ul>
-                                    <li><strong>News Collection:</strong> Integrated NewsAPI and custom URL ingestion for automatic news fetching.</li>
-                                    <li><strong>Fake News Detection:</strong> Fine-tuned RoBERTa on LIAR2 dataset for reliable authenticity verification.</li>
-                                    <li><strong>Emotion & Context Analysis:</strong> Applied NLP pipelines to detect sentiment, emotion, and audience relevance.</li>
-                                    <li><strong>Meme Generation:</strong> Used T5, Gemini Pro, and Stable Diffusion APIs to create captions and visuals aligned with context.</li>
-                                    <li><strong>UI Integration:</strong> Built a Streamlit-based interactive interface with real-time analytics and meme previews.</li>
-                                </ul>
-                                Highlights:
-                                <ul>
-                                    <li>Multilingual meme generation (English, Hindi, Telugu) for diverse audiences</li>
-                                    <li>Automated fact-checking pipeline ensures credibility before meme creation</li>
-                                    <li>Customizable generation options for humor, sarcasm, or informative tone</li>
-                                    <li>Explored applications in AI-driven digital media and content marketing</li>
+                                    <li><strong>News Article Processing:</strong> Fetches and processes news from multiple categories via NewsAPI or user-provided URLs.</li>
+                                    <li><strong>Article Summarization:</strong> Uses T5-small to generate concise, informative summaries optimized for meme creation.</li>
+                                    <li><strong>Fake News Detection:</strong> Employs fine-tuned BERT/RoBERTa models to filter out unreliable or low-credibility news sources.</li>
+                                    <li><strong>Emotion Analysis:</strong> Applies a fine-tuned RoBERTa model for multi-label emotion classification to capture nuanced context.</li>
+                                    <li><strong>Meme Generation Pipeline:</strong> Analyzes article summaries, generates context-aware captions with Gemini Pro, aligns sentiment with suitable templates, and creates final memes using ImgFlip API.</li>
+                                    <li><strong>Streamlit Interface:</strong> Offers an intuitive web UI for real-time news-to-meme generation with meme previews and analytics.</li>
                                 </ul>
                                 This project demonstrates expertise in multimodal AI, fact-aware NLP, and creative human-AI interaction design.
-                            </p>
+                            </p>                            
                             <div class="project-links">
                                 <a href="https://github.com/akshay-menta/Infomeme--AI-Driven-Meme-Digest" target="_blank">Code</a>
                                 <a href="#" target="_blank">Demo</a>
